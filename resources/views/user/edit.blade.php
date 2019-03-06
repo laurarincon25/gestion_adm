@@ -2,10 +2,24 @@
 
 @section('content')
 
+
+<style>
+h3 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 45px;
+    text-align: justify;
+    text-align: center;
+    text-indent: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+</style>
+
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 	
 	<ol class="breadcrumb">
-		<li><a href="#"><em class="fa fa-home"></em></a></li>
+		<li><a href="#"><em class="fa fa-user"></em></a></li>
 		<li class="active">User</li>
 	</ol>
 	

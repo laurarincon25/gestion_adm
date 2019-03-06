@@ -9,6 +9,15 @@ li {
     list-style: none;
 }
 
+p{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 400px;
+    text-indent: 30px;
+    font-family: "Times New Roman", Times, serif;
+   
+}
+
 a:hover,
 a:visited,
 a {
@@ -203,7 +212,7 @@ li a.active {
 
 .about h2 {
     font-size: 90px;
-    color: #42b3e5;
+    color: #4E7DBC;
     margin-top: 50px;
 }
 .about h4 {
@@ -305,17 +314,27 @@ li a.active {
 
 .service h2 {
     font-size: 90px;
-    color: #42b3e5;
+    color: #4E7DBC;
     margin-top: 50px;
     margin-bottom: 0;
 }
 .service h4 {
-    font-size: 24px;
-    color: #737373;
+    font-size: 30px;
+    color: #000000;
     margin-top: 0;
     margin-bottom: 45px;
     display: block;
 }
+
+.service p{
+    text-align: justify;
+    font-weight: bold;
+    font-size: 15px;
+    text-indent: 30px;
+    font-family: "Times New Roman", Times, serif;
+   
+}
+
 
 
 /*CONTACTENOS*/

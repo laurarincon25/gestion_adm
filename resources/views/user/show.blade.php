@@ -1,12 +1,35 @@
+
 @extends('layouts.estudiante')
 
 @section('content')
 
+
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
+
+<style>
+h3 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 45px;
+    text-align: justify;
+    text-align: center;
+    text-indent: 30px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p{
+    text-align: justify;
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+   
+}
+
+</style>
 	
 	<ol class="breadcrumb">
-		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">User</li>
+		<li><a href="#"><em class="fa fa-user"></em></a></li>
+		<li class="active">Perfil</li>
 	</ol>
 	
 	@include('common.success')

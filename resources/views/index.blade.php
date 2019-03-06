@@ -159,8 +159,7 @@
 							<div class="pentagon-text">
 								<h1>M</h1>
 							</div>
-							<h3>Misión</h3>
-							<p>Administrar los recursos presupuestarios y financieros del Decanato, desarrollando estrategias que permitan cumplir con las leyes, normas, reglamentos y procedimientos vigentes en la institución, a fin de contribuir a la racionalización y optimización de los recursos humanos, materiales y financieros.</p>
+							<p style="color:#000000;">Administrar los recursos presupuestarios y financieros del Decanato, desarrollando estrategias que permitan cumplir con las leyes, normas, reglamentos y procedimientos vigentes en la Institución, a fin de contribuir a la racionalización y optimización de los recursos humanos, materiales y financieros.</p>
 						</div>
 					</div>
 				</div>
@@ -168,14 +167,14 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="single-about-detail">
 						<div class="about-img">
-							<img class="img-responsive" src="img/info.png" alt="">
+							<img class="img-responsive" src="img/vision5.png" alt="">
 						</div>
 						<div class="about-details">
 							<div class="pentagon-text">
 								<h1>V</h1>
 							</div>
-							<h3>Visión</h3>
-							<p>Ser la unidad administrativa por excelencia, con elevada calidad de servicio para garantizar una gerencia que asegure el funcionamiento académico administrativo del Decanato.</p>
+							<p style="color:#000000;">Ser la unidad administrativa por excelencia, con elevada calidad de servicio para garantizar una gerencia que asegure el funcionamiento académico administrativo del Decanato.</p>
+							<br>
 						</div>
 					</div>
 				</div>
@@ -183,14 +182,16 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="single-about-detail">
 						<div class="about-img">
-							<img class="img-responsive" src="img/info.png" alt="">
+							<img class="img-responsive" src="img/objetivos[1].png" alt="">
 						</div>
+						<br>
+						<br>
+						<br>
 						<div class="about-details">
 							<div class="pentagon-text">
 								<h1>O</h1>
 							</div>
-							<h3>Objetivo General</h3>
-							<p>Administrar de forma eficiente los recursos financieros, personal humano y equipos pertenecientes a la institución. Atendiendo y dando respuesta a todas las solicitudes realizadas por los usuarios con la finalidad de prestar un servicio de primera o solventar un problema de manera eficiente.</p>
+							<p style="color:#000000;">Administrar de forma eficiente los recursos financieros, personal humano y equipos pertenecientes a la Institución. Atendiendo y dando respuesta a todas las solicitudes realizadas por los usuarios con la finalidad de prestar un servicio de primera o solventar un problema de manera eficiente.</p>
 						</div>
 					</div>
 				</div>
@@ -204,7 +205,7 @@
 		<div class="container">
 			<div class="row">
 				<h2>Servicios</h2>
-				<h4> es un conjunto de actividades que buscan satisfacer las necesidades de un cliente. Los servicios incluyen una diversidad de actividades que se pueden planificar desempeñadas por un gran número de personas (funcionarios, empleados, empresarios) que trabajan para el estado (servicios públicos) o para empresas particulares (servicios privados); entre estos pueden señalarse los servicios de: electricidad, agua potable, limpieza, teléfono, telégrafo, correo, transporte, educación, cibercafés, sanidad, asistencia social, etc.</h4>
+				<h4>En esta sección podrá encontrar una muestra de nuestros servicios al usuario.</h4>
 
 				<div class="col-md-4 col-sm-6">
 					<div class="single-about-detail clearfix">
@@ -213,10 +214,10 @@
 						</div>
 						<div class="about-details">
 							<div class="pentagon-text">
-								<h1>I</h1>
+								<h1>SD</h1>
 							</div>
-							<h3>Solicitud de documentos academicos</h3>
-							<p>documentos</p>
+							<h3 style="color:#000000;">Solicitud de Documentos</h3>
+							<p style="color:#000000;"> Te ofrecemos una serie de menùs que te proporcionarán ayuda para realizar tus solicitudes online de documentos academicos y programas, con las máximas garantias en seguridad y pagos.</p>
 						</div>
 					</div>
 				</div>
@@ -228,9 +229,11 @@
 						</div>
 						<div class="about-details">
 							<div class="pentagon-text">
-								<h1>P</h1>
+								<h1>SS</h1>
 							</div>
-							<h3>servicios</p>
+							<h3 style="color:#000000;">Solicitud de Servicios</h3>
+							<p style="color:#000000;">Conozca nuestro amplio portafolio de servicios y permítanos aportarles soluciones especializadas y de calidad en Gestión AD, logrando así su completa satisfacción. <br><br></p>
+
 						</div>
 					</div>
 				</div>
@@ -242,10 +245,10 @@
 						</div>
 						<div class="about-details">
 							<div class="pentagon-text">
-								<h1>A</h1>
+								<h1>QS</h1>
 							</div>
-							<h3>Quejas y sugerencias</h3>
-							<p>quejas</p>
+							<h3 style="color:#000000;">Quejas y Sugerencias</h3>
+							<p style="color:#000000;">Puedes remitir una queja si observas un mal funcionamiento sobre los servicios públicos y también puedes comunicar una propuesta de mejora sobre el funcionamiento de los mismo.<br><br></p>
 						</div>
 					</div>
 				</div>
@@ -279,6 +282,10 @@
 							<ul><li><i class="fa fa-phone"></i><span>Telefono:</span> (0251) 987-1235</li></ul>
 							<ul><li><i class="fa fa-fax"></i><span>Fax:</span> (123) 984-1234</li></ul>
 							<ul><li><i class="fa fa-envelope"></i><span>Email:</span> info@direccionadm.com</li></ul>
+							<ul><li><i class="fa fa-facebook"></i><span>Facebook:</span> x</li></ul>
+							<ul><li><i class="fa fa-twitter"></i><span>Twitter:</span> x</li></ul>
+							<ul><li><i class="fa fa-skype"></i><span>Skype:</span> x</li></ul>
+							<ul><li><i class="fa fa-instagram"></i><span>Instagram:</span> x</li></ul>
 						</div>
 					</div>
 				</div>
@@ -292,12 +299,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-6 footer-para">
-					<p>&copy;Copyright 2018 Empresa de Desarrollo │Todos los Derechos Reservados.</p>
+					<p>&copy;Copyright 2019 Empresa de Desarrollo │Todos los Derechos Reservados.</p>
 				</div>
 				<div class="col-xs-6 text-right">
 					<a href=""><i class="fa fa-facebook"></i></a>
 					<a href=""><i class="fa fa-twitter"></i></a>
 					<a href=""><i class="fa fa-skype"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>
 		</div>

@@ -48,15 +48,7 @@
 							<div class="clear"></div>
 						</div>
 						<!--FIN DEL PRIMER CUADRO-->
-						<!--SEGUNDO CUADRO EN DND ESTA LA BARRA DE BUSQUEDA-->
-						<div class="divider"></div>
-
-						<form role="search">
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Buscar...">
-							</div>
-						</form>
-						<!--FIN DEL SEGUNDO CUADRO-->
+						
 						<!--TERCER CUADRO DND ESTA EL MENU DE OPCIONES-->
 						<ul class="nav menu">
 
@@ -92,10 +84,10 @@
 
 							<li><a href="{{ route('estudiante') }}"><em class="fa fa-home">&nbsp;</em> Home</a></li>
 							<li><a href="{{ route('user.show',Auth::user()->id) }}"><em class="fa fa-user">&nbsp;</em> Perfil</a></li>
-							<li><a href="{{ route('solicitud.create') }}"><em class="fa fa-file">&nbsp;</em> Solicitar Documentos</a></li>
-							<li><a href="{{ route('programa.create') }}"><em class="fa fa-file-text">&nbsp;</em> Solicitar Programas</a></li>
-							<li><a href="{{ route('solicitud.index') }}"><em class="fa fa-file">&nbsp;</em> Ver Solicitud de Documentos</a></li>
-							<li><a href="{{ route('programa.index') }}"><em class="fa fa-file-text">&nbsp;</em> Ver Solicitud de Programas</a></li>
+							<li><a href="{{ route('solicitud.create') }}"><em class="fa fa-file-text">&nbsp;</em> Solicitar Documentos</a></li>
+							<li><a href="{{ route('programa.create') }}"><em class="fa fa-folder-open">&nbsp;</em> Solicitar Programas</a></li>
+							<li><a href="{{ route('solicitud.index') }}"><em class="fa fa-area-chart">&nbsp;</em> Ver Solicitud de Documentos</a></li>
+							<li><a href="{{ route('programa.index') }}"><em class="fa fa-bar-chart ">&nbsp;</em> Ver Solicitud de Programas</a></li>
 							<li><a href="{{ route('sugerencia.create') }}"><em class="fa fa-comments">&nbsp;</em> Sugerencias &amp;  Quejas</a></li>
 							
 							
