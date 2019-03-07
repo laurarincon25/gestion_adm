@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
-	
+
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-home"></em></a></li>
 		<li class="active">Lista de Usuarios <span class="badge">{{ count($users) }}</span></li>
@@ -13,9 +13,9 @@
 		<table class="table table-hover table-condensed">
 			<thead>
 				<tr>
-					<th>Cedula</th>
-					<th>Nombre</th>
-					<th>Email</th>
+					<th>Cédula</th>
+					<th>Nombre Completo</th>
+					<th>Correo</th>
 					<th>Dirección</th>
 					<th>Teléfono</th>
 					<th>Acción</th>
@@ -42,7 +42,7 @@
 			<h1 class="text-center">No hay registros</h1>
 		</div>
 	@endif
-	
+
 </div>
 
 @endsection

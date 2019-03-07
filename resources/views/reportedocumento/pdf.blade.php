@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Documento</title>
-	
+
 	<style type="text/css">
 		body{
 			margin: 0;
@@ -65,15 +65,15 @@
 				<tr>
 					<th>Código</th>
 					<th>Nombre del Solicitante</th>
-					<th>Cedula del Solicitante</th>
+					<th>Cédula del Solicitante</th>
 					<th>Teléfono del Solicitante</th>
 					<th>Correo Enviado</th>
 					<th>Carrera</th>
 					<th>Documentos Solicitados</th>
 					<th>Monto</th>
 					<th>Fecha Solicitada</th>
-					<th>Ultima Actualización</th>
-					<th>Status</th>
+					<th>Última Actualización</th>
+					<th>Estado</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -121,8 +121,11 @@
 						@if($solicitud->status=="A")
 						Culminado
 						@endif
+						@if($solicitud->status=="M")
+						Rechazada
+						@endif
 					</td>
-					
+
 				</tr>
 				@endforeach
 			</tbody>

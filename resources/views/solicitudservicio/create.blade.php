@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
-  
+
   <ol class="breadcrumb">
     <li><a href="#"><em class="fa fa-home"></em></a></li>
-    <li class="active">Solicitu-Servicio</li>
+    <li class="active">Solicitud-Servicio</li>
   </ol>
 
   @if (session('status'))
@@ -46,18 +46,18 @@
           <div class="checkbox-content" id="{{$servicio->id}}" style="display: none;">
             @foreach($servicio->items as $item)
             <div class="check">
-              
+
               <input id="{{$item->id}}-{{$item->servicio_id}}" class="check-item" value="{{$item->id}}" name="items[]" type="checkbox" onchange="onChecked('{{$item->id}}-{{$item->servicio_id}}')">
 
               <input id="cant-{{$item->id}}-{{$item->servicio_id}}" type="number" name="cantidad[]" class="form-control-cantidad input-cantidad" min="1" pattern="^[0-9]+" required>
               <label>{{$item->nombre}}</label>
-              
+
             </div>
             @endforeach
           </div>
           @endforeach
          </div>
-        
+
         <div class="form-group">
           <label>Observaciones</label>
           <textarea  id="observaciones" name="observaciones" class="form-control" rows="3" required></textarea>
@@ -69,7 +69,7 @@
         </div>
 
         <input type ="hidden" name="user_id" value="{{ Auth::user()->id }}">
-        
+
         <button type="submit" class="btn btn-primary">Solicitar</button>
 
       </form>
@@ -83,21 +83,21 @@
 @section('scripts')
 
 <script type="text/javascript">
-    
+
     var idselected;
     var id = 0;
 
-    
+
     function selected()
     {
       var checkboxs = document.getElementsByClassName('checkbox-content');
       var cantidad = document.getElementsByClassName('input-cantidad');
       var item = document.getElementsByClassName('check-item');
       idselected = document.getElementById('servicio_id');
-      
+
       id = idselected.options[idselected.selectedIndex].value;
       console.log(id);
-      
+
       for (var i = 0; i < checkboxs.length; i++)
       {
         if(checkboxs[i].id==id)
@@ -106,7 +106,7 @@
           $(".check-item").prop('checked', false);
           $(".input-cantidad").prop('disabled', true);
           $('.input-cantidad').val('');
-            
+
           if(id==4)
           {
             for (var j = 0; j < cantidad.length; j++)
@@ -154,6 +154,6 @@
         $("#cant-"+id).prop('disabled', true);
       }
     }
-    
+
 </script>
 @endsection

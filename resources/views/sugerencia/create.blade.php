@@ -6,6 +6,7 @@
 
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
+<<<<<<< HEAD
   <style>
 h3 {
     font-size: 30px;
@@ -26,6 +27,8 @@ p{
 
 </style>
   
+=======
+>>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
   <ol class="breadcrumb">
     <li><a href="#"><em class="fa fa-comments"></em></a></li>
     <li class="active">Sugerencias y Quejas</li>
@@ -34,7 +37,7 @@ p{
   @include('common.success')
 
   <div class="page-header">
-    <h3 style="text-align: center">Sugerencias y Quejas <p><small>Escribe detalladamente lo que deseés compartir con nosotros</small></p></h3>
+    <h3 style="text-align: center">Sugerencias y Quejas <p><small>Escribe detalladamente lo que desees compartir con nosotros</small></p></h3>
   </div>
 
   <form method="POST" action="{{ route('sugerencia.store') }}" >

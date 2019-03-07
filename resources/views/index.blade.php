@@ -217,7 +217,7 @@
 								<h1>SD</h1>
 							</div>
 							<h3 style="color:#000000;">Solicitud de Documentos</h3>
-							<p style="color:#000000;"> Te ofrecemos una serie de menùs que te proporcionarán ayuda para realizar tus solicitudes online de documentos academicos y programas, con las máximas garantias en seguridad y pagos.</p>
+							<p style="color:#000000;"> Te ofrecemos una serie de menùs que te proporcionarán ayuda para realizar tus solicitudes online de documentos academicos y programas, con las máximas garantías en seguridad y pagos.</p>
 						</div>
 					</div>
 				</div>
@@ -248,7 +248,7 @@
 								<h1>QS</h1>
 							</div>
 							<h3 style="color:#000000;">Quejas y Sugerencias</h3>
-							<p style="color:#000000;">Puedes remitir una queja si observas un mal funcionamiento sobre los servicios públicos y también puedes comunicar una propuesta de mejora sobre el funcionamiento de los mismo.<br><br></p>
+							<p style="color:#000000;">Puedes remitir una queja si observas un mal funcionamiento sobre los servicios públicos y también puedes comunicar una propuesta de mejora sobre el funcionamiento de los mismos.<br><br></p>
 						</div>
 					</div>
 				</div>
@@ -274,14 +274,14 @@
 						<h2>Contáctenos</h2>
 					</div>
 					<div class="col-md-5 contact-info text-left">
-						<h3>informacion de contacto</h3>
+						<h3>Información de contacto</h3>
 						<div class="info-detail">
 							<ul><li><i class="fa fa-calendar"></i><span>Lunes-Viernes:</span> 8:30 AM a 4:30 PM</li></ul>
 							<ul><li><i class="fa fa-map-marker"></i><span>Dirección:</span> Av. Las Industrias Nucleo Obelisco, Barquisimeto, Lara</li></ul>
 							<br>
-							<ul><li><i class="fa fa-phone"></i><span>Telefono:</span> (0251) 987-1235</li></ul>
+							<ul><li><i class="fa fa-phone"></i><span>Teléfono:</span> (0251) 987-1235</li></ul>
 							<ul><li><i class="fa fa-fax"></i><span>Fax:</span> (123) 984-1234</li></ul>
-							<ul><li><i class="fa fa-envelope"></i><span>Email:</span> info@direccionadm.com</li></ul>
+							<ul><li><i class="fa fa-envelope"></i><span>Correo:</span> info@direccionadm.com</li></ul>
 							<ul><li><i class="fa fa-facebook"></i><span>Facebook:</span> x</li></ul>
 							<ul><li><i class="fa fa-twitter"></i><span>Twitter:</span> x</li></ul>
 							<ul><li><i class="fa fa-skype"></i><span>Skype:</span> x</li></ul>

@@ -4,6 +4,7 @@
 
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
+<<<<<<< HEAD
 
   <style>
 .panel-heading {
@@ -16,6 +17,8 @@
 
 </style>
   
+=======
+>>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
   <ol class="breadcrumb">
     <li><a href="#"><em class="fa fa-folder-open"></em></a></li>
     <li class="active">Solicitar programa</li>
@@ -28,7 +31,11 @@
   @endif
 
   <div class="panel panel-default" >
+<<<<<<< HEAD
     <div class="panel-heading" style="text-align: center">Solicitud de Programas Académicos</div>
+=======
+    <div class="panel-heading">Solicitud de Programas Académicos</div>
+>>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
     <div class="panel-body">
       <form action ="{{ route('programa.store') }}" method="POST" role="form">
         {{ csrf_field() }}
@@ -48,7 +55,7 @@
           <div class="checkbox-content" id="{{$carrera->id}}" style="display: none;">
             @foreach($carrera->precio_programas as $programa)
             <div class="check">
-              
+
               <input id="ch-{{$programa->carrera_id}}-{{$programa->pensum_id}}" value="{{$programa->pensum_id}}" name="pensum_id" type="radio" onchange="onChecked('ch-{{$programa->carrera_id}}-{{$programa->pensum_id}}')" required>
 
               <label>{{$programa->pensum->nombre}}</label>
@@ -58,7 +65,7 @@
           </div>
           @endforeach
          </div>
-        
+
         <div class="form-group">
           <label>Solicita programa para:</label>
           <textarea  id="descripcion" name="descripcion" class="form-control" rows="3" required></textarea>
@@ -70,7 +77,7 @@
         </div>
 
         <input type ="hidden" name="user_id" value="{{ Auth::user()->id }}">
-        
+
         <button type="submit" class="btn btn-primary">Solicitar</button>
 
       </form>
@@ -84,17 +91,17 @@
 @section('scripts')
 
 <script type="text/javascript">
-    
+
     var idselected;
     var id = 0;
-    
+
     function selected()
     {
       var checkboxs = document.getElementsByClassName('checkbox-content');
       idselected = document.getElementById('carrera_id');
-      
+
       id = idselected.options[idselected.selectedIndex].value;
-      
+
       for (var i = 0; i < checkboxs.length; i++)
       {
         if(checkboxs[i].id==id)
@@ -113,5 +120,5 @@
         var checkbox = document.getElementById(id);
         var precio = checkbox.value;
     }
-    
+
 </script>

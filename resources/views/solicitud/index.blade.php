@@ -3,6 +3,7 @@
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
+<<<<<<< HEAD
 <style>
 h2 {
     font-size: 30px;
@@ -14,6 +15,8 @@ h2 {
 
 </style>
 	
+=======
+>>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-area-chart"></em></a></li>
 		<li class="active">Ver Solicitud de Documentos <span class="badge">{{ count($solicitudes) }}</span></li>
@@ -31,19 +34,19 @@ h2 {
 
 	@include('layouts.filtrarfechas')
 
-	@if(count($solicitudes)>0)	
+	@if(count($solicitudes)>0)
 		@foreach($solicitudes as $solicitud)
 		<ul class="list-group">
 			<li class="list-group-item"><b>Solicitud: </b> {{ $solicitud->uuid }}</li>
 			<li class="list-group-item"><b>Nombre del Solicitante: </b> {{ $solicitud->user->name }}</li>
-			<li class="list-group-item"><b>Cedula del Solicitante: </b> {{ $solicitud->user->cedula }}</li>
+			<li class="list-group-item"><b>Cédula del Solicitante: </b> {{ $solicitud->user->cedula }}</li>
 			<li class="list-group-item"><b>Carrera: </b> {{ $solicitud->carrera->nombre }}</li>
 			<li class="list-group-item"><b>Documentos: </b><br>
 				@php
 				 	$total=0;
 				 @endphp
 				@foreach($solicitud->solicitudes_documentos as $solicitud_documento)
-				
+
 				@php
 	    			$total = $total+$solicitud_documento->precio_fact;
 				@endphp
@@ -56,7 +59,7 @@ h2 {
 			@if($solicitud->status=='A')
 				<li class="list-group-item"><b>Fecha de Aprobación: </b> {{ $solicitud->updated_at->format('d-m-Y') }}</li>
 			@endif
-			<li class="list-group-item"><b>Status: </b>
+			<li class="list-group-item"><b>Estado: </b>
 				@if($solicitud->status=="P")
 				<span class="badge">Pendiente</span>
 				@endif
@@ -71,6 +74,9 @@ h2 {
 				@endif
 				@if($solicitud->status=="A")
 				<span class="badge badge-success">Culminado</span>
+				@endif
+				@if($solicitud->status=="M")
+				<span class="badge badge-success">Rechazada</span>
 				@endif
 			</li>
 
@@ -92,11 +98,12 @@ h2 {
 				</li>
 				@endif
 			@endif
-			
+
 			@if(Auth::user()->hasRole('directoradm'))
 				@if($solicitud->status=='R')
 				<li class="list-group-item">
 					<a href="#modal-procesar-solicitud-{{ $solicitud->id }}" data-toggle="modal" class="btn btn-primary">Aprobar</a>
+					<a href="#modal-rechazar-solicitud-{{ $solicitud->id }}" data-toggle="modal" class="btn btn-primary">Rechazar</a>
 				</li>
 				@endif
 			@endif
@@ -115,6 +122,7 @@ h2 {
 		@include('solicitud.modal-activar')
 		@include('solicitud.modal-procesar')
 		@include('solicitud.modal-aprobar')
+		@include('solicitud.modal-rechazar')
 		@endforeach
 	@else
 		<div class="jumbotron">
