@@ -14,19 +14,16 @@ docente@docente.com<br>
 docente<br>
 encargadoserv@encargadoserv.com<br>
 encargadoserv<br>
+wilmar88880@gmail.com
+wilmar<br>
+yesimar.casta95@gmail.com
+yesimar<br>
+genesi.9601@gmail.com
+genesis<br>
 
-Recuerden que deben sustituir en el archivo .env los parametros de postgress que serían estos:
+La base de datos del proyecto se llama bdadm1 esta en la carpeta bd, y alli tamben esta el archivo de los comando para Hacer un backup y Restaurar backup
 
-DB_CONNECTION=pgsql<br>
-DB_HOST=127.0.0.1<br>
-DB_PORT=5432<br>
-DB_DATABASE=admgestion<br>
-DB_USERNAME=postgres<br>
-DB_PASSWORD=123456
-
-Luego descargan la carpeta vendor en este link y la pegan dentro del proyecto, esa carpeta es donde esta el core de laravel, sin eso no les funcionaran los comandos
-
-https://mega.nz/#!F1w3CKDa!fK1ukIMJM1aYee_ag7j8xKhqXYwFZD_7pSlt5y9npkg
+Luego descargan la carpeta vendor en este link  https://mega.nz/fm/vughDIKB y la pegan dentro del proyecto, esa carpeta es donde esta el core de laravel, sin eso no les funcionaran los comandos 
 
 Ahora si pueden ejecutar los comandos
 
