@@ -7,7 +7,7 @@
         <h3 class="text-center modal-title">Aprobar Solicitud</h3>
       </div>
       <div class="modal-body">
-        <p>¿Estas seguro de aprobar esta solicitud?</p>
+        <p>¿Está seguro de aprobar esta solicitud?</p>
         <input type="hidden" name="status" value="E">
       </div>
       <div class="modal-footer">

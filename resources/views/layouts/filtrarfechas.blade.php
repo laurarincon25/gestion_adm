@@ -91,7 +91,7 @@
 		</div>
 
 	@if(Auth::user()->hasRole('directoradm') || Auth::user()->hasRole('directorpro') || Auth::user()->hasRole('secretario'))
-	
+
 
 		@if(Route::getCurrentRoute()->getName()=="reportedocumentos.index" || Route::getCurrentRoute()->getName()=="reporteprogramas.index" || Route::getCurrentRoute()->getName()=="reporteservicios.index")
 		<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
@@ -99,12 +99,13 @@
 		</div>
 		<div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
 			<select class="form-control" name="status">
-				<option value="">Seleccione un Status</option>
+				<option value="">Seleccione un Estado</option>
 				<option value="P">Pendiente</option>
 				<option value="C">Cancelado</option>
 				<option value="R">En Revisión</option>
 				<option value="E">En Proceso</option>
 				<option value="A">Culminado</option>
+				<option value="M">Rechazado</option>
 			</select>
 		</div>
 		<!--<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">

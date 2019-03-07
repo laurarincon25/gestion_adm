@@ -103,7 +103,7 @@ class SolicitudServiciosController extends Controller
     {
         $servicios  = Servicio::all();
         $departamentos  = Departamento::all();
-        
+
         $servicios->each(function($servicios){
             $servicios->items;
         });
@@ -122,7 +122,7 @@ class SolicitudServiciosController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $solicitud_servicio = new SolicitudServicio();
         $solicitud_servicio->uuid= Uuid::generate()->string;
         $solicitud_servicio->user_id = $request['user_id'];
@@ -150,7 +150,7 @@ class SolicitudServiciosController extends Controller
             }
             $solicitud_item->save();
         }
-        
+
 
         Mail::to($request->email)->send(new EmailSolicitudServicio($solicitud_servicio));
 
@@ -197,18 +197,18 @@ class SolicitudServiciosController extends Controller
     public function update(Request $request, $id)
     {
         $solicitud_servicio = SolicitudServicio::findOrFail($id);
-        
+
         if($request['status'])
         {
             $solicitud_servicio->status = $request['status'];
             $solicitud_servicio->update();
-            
-            if($solicitud_servicio->status=="E" || $solicitud_servicio->status=="A")
+
+            if($solicitud_servicio->status=="E" || $solicitud_servicio->status=="A" || $solicitud_servicio->status=="M")
             {
                 Mail::to($solicitud_servicio->email)->send(new EmailSolicitudServicio($solicitud_servicio));
             }
 
-            return redirect()->route('solicitudservicio.index')->with('status','Se ha actualizado el usuario');
+            return redirect()->route('solicitudservicio.index')->with('status','Se ha actualizado la solicitud');
         }
     }
 

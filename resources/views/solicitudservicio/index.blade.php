@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
-	
+
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">Solicitu de Servicios <span class="badge">{{ count($solicitud_servicios) }}</span></li>
+		<li class="active">Solicitud de Servicios <span class="badge">{{ count($solicitud_servicios) }}</span></li>
 	</ol>
 
 	<div class="row">
@@ -18,17 +18,17 @@
 
 	@include('layouts.filtrarfechas')
 
-	@if(count($solicitud_servicios)>0)	
+	@if(count($solicitud_servicios)>0)
 		@foreach($solicitud_servicios as $solicitud_servicio)
 		<ul class="list-group">
 			<li class="list-group-item"><b>Solicitud: </b> {{ $solicitud_servicio->uuid }}</li>
 			<li class="list-group-item"><b>Nombre del Solicitante: </b> {{ $solicitud_servicio->user->name }}</li>
-			<li class="list-group-item"><b>Cedula del Solicitante: </b> {{ $solicitud_servicio->user->cedula }}</li>
+			<li class="list-group-item"><b>Cédula del Solicitante: </b> {{ $solicitud_servicio->user->cedula }}</li>
 			<li class="list-group-item"><b>Departamento: </b> {{ $solicitud_servicio->departamento->nombre }}</li>
 			{{-- <li class="list-group-item"><b>Tipo de Servicio: </b> {{ $solicitud_servicio->servicio->tipo_servicio->nombre }}</li> --}}
 			<li class="list-group-item"><b>Servicio: </b> {{ $solicitud_servicio->servicio->nombre }}</li>
 			<li class="list-group-item"><b>Observaciones: </b> {{ $solicitud_servicio->observaciones }}</li>
-			<li class="list-group-item"><b>Items: </b><br>
+			<li class="list-group-item"><b>Servicios: </b><br>
 				@foreach($solicitud_servicio->solicitud_servicio_items as $solicitud_servicio_item)
 				@if($solicitud_servicio_item->cantidad)
 				<b>({{ $solicitud_servicio_item->cantidad }} unidades)</b>
@@ -40,7 +40,7 @@
 			@if($solicitud_servicio->status=='A')
 				<li class="list-group-item"><b>Fecha de Aprobación: </b> {{ $solicitud_servicio->updated_at->format('d-m-Y') }}</li>
 			@endif
-			<li class="list-group-item"><b>Status: </b>
+			<li class="list-group-item"><b>Estado: </b>
 				@if($solicitud_servicio->status=="P")
 				<span class="badge">Pendiente</span>
 				@endif
@@ -52,6 +52,9 @@
 				@endif
 				@if($solicitud_servicio->status=="A")
 				<span class="badge badge-success">Culminado</span>
+				@endif
+				@if($solicitud_servicio->status=="M")
+				<span class="badge badge-success">Rechazado</span>
 				@endif
 			</li>
 
@@ -66,11 +69,12 @@
 				</li>
 				@endif
 			@endif
-			
+
 			@if(Auth::user()->hasRole('directoradm'))
 				@if($solicitud_servicio->status=='P')
 				<li class="list-group-item">
 					<a href="#modal-procesar-solicitud_servicio-{{ $solicitud_servicio->id }}" data-toggle="modal" class="btn btn-primary">Aprobar</a>
+					<a href="#modal-rechazar-solicitud_servicio-{{ $solicitud_servicio->id }}" data-toggle="modal" class="btn btn-primary">Rechazar</a>
 				</li>
 				@endif
 			@endif
@@ -88,6 +92,7 @@
 		@include('solicitudservicio.modal-activar')
 		@include('solicitudservicio.modal-procesar')
 		@include('solicitudservicio.modal-aprobar')
+		@include('solicitudservicio.modal-rechazar')
 		@endforeach
 	@else
 		<div class="jumbotron">

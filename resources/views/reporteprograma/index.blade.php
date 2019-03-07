@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
-	
+
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">Solicitu de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
+		<li class="active">Solicitud de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
 	</ol>
-	
+
 	@include('layouts.filtrarfechas')
 
 	<div class="row">
@@ -40,7 +40,7 @@
 				<tr>
 					<th>Código</th>
 					<th>Nombre del Solicitante</th>
-					<th>Cedula del Solicitante</th>
+					<th>Cédula del Solicitante</th>
 					<th>Teléfono del Solicitante</th>
 					<th>Correo Enviado</th>
 					<th>Carrera</th>
@@ -48,8 +48,8 @@
 					<th>Descripción</th>
 					<th>Monto</th>
 					<th>Fecha Solicitada</th>
-					<th>Ultima Actualización</th>
-					<th>Status</th>
+					<th>Última Actualización</th>
+					<th>Estado</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -82,8 +82,11 @@
 						@if($solicitud_programa->status=="A")
 						<span class="badge badge-success">Culminado</span>
 						@endif
+						@if($solicitud_programa->status=="M")
+						<span class="badge badge-success">Rechazado</span>
+						@endif
 					</td>
-					
+
 				</tr>
 				@endforeach
 			</tbody>
@@ -94,6 +97,6 @@
 			<h1 class="text-center">No hay registros</h1>
 		</div>
 	@endif
-	
+
 </div>
 @endsection
