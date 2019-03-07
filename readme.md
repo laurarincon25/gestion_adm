@@ -14,11 +14,11 @@ docente@docente.com<br>
 docente<br>
 encargadoserv@encargadoserv.com<br>
 encargadoserv<br>
-wilmar88880@gmail.com
+wilmar88880@gmail.com<br>
 wilmar<br>
-yesimar.casta95@gmail.com
+yesimar.casta95@gmail.com<br>
 yesimar<br>
-genesi.9601@gmail.com
+genesi.9601@gmail.com<br>
 genesis<br>
 
 La base de datos del proyecto se llama bdadm1 esta en la carpeta bd, y alli tamben esta el archivo de los comando para Hacer un backup y Restaurar backup
