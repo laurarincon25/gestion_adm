@@ -6,8 +6,31 @@
 
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
+<<<<<<< HEAD
+  <style>
+h3 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p{
+    text-align: justify;
+    font-size: 27px;
+    font-family: "Times New Roman", Times, serif;
+    text-indent: 20px;
+    text-align: center;
+   
+}
+
+</style>
+  
+=======
+>>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
   <ol class="breadcrumb">
-    <li><a href="#"><em class="fa fa-home"></em></a></li>
+    <li><a href="#"><em class="fa fa-comments"></em></a></li>
     <li class="active">Sugerencias y Quejas</li>
   </ol>
 

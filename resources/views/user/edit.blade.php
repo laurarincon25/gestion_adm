@@ -31,7 +31,7 @@ h3 {
 	</div>
 
 	<div class="panel panel-default" >
-		<div class="panel-heading">Información Básica</div>
+		<div class="panel-heading" style="text-align: center">Información Básica</div>
 		<div class="panel-body">
 			{!! Form::open(array('route' => ['user.update',$user],'method' => 'PUT','files' => true)) !!}
 

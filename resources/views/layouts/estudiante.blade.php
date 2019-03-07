@@ -87,7 +87,7 @@
 							<li><a href="{{ route('solicitud.create') }}"><em class="fa fa-file-text">&nbsp;</em> Solicitar Documentos</a></li>
 							<li><a href="{{ route('programa.create') }}"><em class="fa fa-folder-open">&nbsp;</em> Solicitar Programas</a></li>
 							<li><a href="{{ route('solicitud.index') }}"><em class="fa fa-area-chart">&nbsp;</em> Ver Solicitud de Documentos</a></li>
-							<li><a href="{{ route('programa.index') }}"><em class="fa fa-bar-chart ">&nbsp;</em> Ver Solicitud de Programas</a></li>
+							<li><a href="{{ route('programa.index') }}"><em class="fa fa-bar-chart">&nbsp;</em> Ver Solicitud de Programas</a></li>
 							<li><a href="{{ route('sugerencia.create') }}"><em class="fa fa-comments">&nbsp;</em> Sugerencias &amp;  Quejas</a></li>
 							
 							
