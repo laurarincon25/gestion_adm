@@ -1,17 +1,29 @@
 @extends('layouts.estudiante')
 
 @section('content')
+
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
+
+  <style>
+.panel-heading {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+</style>
   
   <ol class="breadcrumb">
-    <li><a href="#"><em class="fa fa-home"></em></a></li>
-    <li class="active">Documento</li>
+    <li><a href="#"><em class="fa fa-file-text"></em></a></li>
+    <li class="active">Solicitud de documentos</li>
   </ol>
 
   @include('common.success')
 
   <div class="panel panel-default" >
-    <div class="panel-heading">Solicitud de documentos</div>
+    <div class="panel-heading" style="text-align: center">Solicitud de documentos</div>
     <div class="panel-body">
       <form action ="{{ route('solicitud.store') }}" method="POST" role="form">
         
@@ -54,7 +66,7 @@
         <input type ="hidden" name="user_id" value="{{ Auth::user()->id }}">
         <input type ="hidden" name="status" value="P" >
 
-        <button type="submit" class="btn btn-success">Solicitar</button>
+        <button type="submit" class="btn btn-primary">Solicitar</button>
       </form>
     </div>
   </div>

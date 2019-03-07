@@ -2,15 +2,26 @@
 
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
+
+	<style>
+h2 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+</style>
 	
 	<ol class="breadcrumb">
-		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">Solicitu de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
+		<li><a href="#"><em class="fa fa-bar-chart"></em></a></li>
+		<li class="active">Ver Solicitud de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
 	</ol>
 
 	<div class="row">
 		<div class="col-lg-12">
-			<h2 class="page-header">Panel de Solicitud de Programas</h2>
+			<h2 class="page-header" style="text-align: center">Panel de Solicitud de Programas</h2>
 		</div>
 	</div>
 

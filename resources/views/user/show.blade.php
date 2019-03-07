@@ -3,7 +3,6 @@
 
 @section('content')
 
-
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
 <style>
@@ -35,7 +34,7 @@ p{
 	@include('common.success')
 	
 	<div class="page-header">
-		<h3 style="text-align: center">Mi perfil <p><small>Añade informacion personal para compartir tu perfil</small></p></h3>
+		<h3 style="text-align: center">Mi perfil <p><small>Añade información personal para compartir tu perfil</small></p></h3>
 	</div>
 	@if($user)
 	<ul class="list-group">
