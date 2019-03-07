@@ -27,7 +27,7 @@ class SolicitudController extends Controller
     public function index(Request $request)
     {
         $user_id = Auth::user()->id;
-        
+
         if(Auth::user()->hasRole('directoradm'))
         {
             if(count($request->query)>0)
@@ -143,7 +143,7 @@ class SolicitudController extends Controller
         }
 
         Mail::to($request->email)->send(new EmailSolicitud($last_solicitud));
-        return redirect()->route('solicitud.create')->with('status','Se ha enviado la solicitud');
+        return redirect()->route('solicitud.create')->with('status','Se ha enviado la solicitud. Diríjase a la opción de VER SOLICITUD DE DOCUMENTOS para realizar el pago o cancelar el proceso de la solicitud ');
 
     }
 
@@ -181,13 +181,13 @@ class SolicitudController extends Controller
     public function update(SolicitudUpdateRequest $request, $id)
     {
         $solicitud = Solicitud::findOrFail($id);
-        
+
         if($request['status'])
         {
             $solicitud->status = $request['status'];
             $solicitud->update();
-            
-            if($solicitud->status=="E" || $solicitud->status=="A")
+
+            if($solicitud->status=="E" || $solicitud->status=="A" || $solicitud->status=="M")
             {
                 Mail::to($solicitud->email)->send(new EmailSolicitud($solicitud));
             }

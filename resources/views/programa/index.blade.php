@@ -2,10 +2,10 @@
 
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
-	
+
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">Solicitu de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
+		<li class="active">Solicitud de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
 	</ol>
 
 	<div class="row">
@@ -18,12 +18,12 @@
 
 	@include('layouts.filtrarfechas')
 
-	@if(count($solicitud_programas)>0)	
+	@if(count($solicitud_programas)>0)
 		@foreach($solicitud_programas as $solicitud_programa)
 		<ul class="list-group">
 			<li class="list-group-item"><b>Solicitud: </b> {{ $solicitud_programa->uuid }}</li>
 			<li class="list-group-item"><b>Nombre del Solicitante: </b> {{ $solicitud_programa->user->name }}</li>
-			<li class="list-group-item"><b>Cedula del Solicitante: </b> {{ $solicitud_programa->user->cedula }}</li>
+			<li class="list-group-item"><b>Cédula del Solicitante: </b> {{ $solicitud_programa->user->cedula }}</li>
 			<li class="list-group-item"><b>Teléfono del Solicitante: </b> {{ $solicitud_programa->user->phone }}</li>
 			<li class="list-group-item"><b>Carrera: </b> {{ $solicitud_programa->pensum->nombre }}</li>
 			<li class="list-group-item"><b>Pensum: </b> {{ $solicitud_programa->carrera->nombre }}</li>
@@ -31,7 +31,7 @@
 			@if($solicitud_programa->status=='A')
 				<li class="list-group-item"><b>Fecha de Aprobación: </b> {{ $solicitud_programa->updated_at->format('d-m-Y') }}</li>
 			@endif
-			<li class="list-group-item"><b>Status: </b>
+			<li class="list-group-item"><b>Estado: </b>
 				@if($solicitud_programa->status=="P")
 				<span class="badge">Pendiente</span>
 				@endif
@@ -46,6 +46,9 @@
 				@endif
 				@if($solicitud_programa->status=="A")
 				<span class="badge badge-success">Culminado</span>
+				@endif
+				@if($solicitud_programa->status=="M")
+				<span class="badge badge-success">Rechazado</span>
 				@endif
 			</li>
 
@@ -67,11 +70,12 @@
 				</li>
 				@endif
 			@endif
-			
+
 			@if(Auth::user()->hasRole('directoradm'))
 				@if($solicitud_programa->status=='R')
 				<li class="list-group-item">
 					<a href="#modal-procesar-solicitud_programa-{{ $solicitud_programa->id }}" data-toggle="modal" class="btn btn-primary">Aprobar</a>
+					<a href="#modal-rechazar-solicitud_programa-{{ $solicitud_programa->id }}" data-toggle="modal" class="btn btn-primary">Rechazar</a>
 				</li>
 				@endif
 			@endif
@@ -90,6 +94,7 @@
 		@include('programa.modal-activar')
 		@include('programa.modal-procesar')
 		@include('programa.modal-aprobar')
+		@include('programa.modal-rechazar')
 		@endforeach
 	@else
 		<div class="jumbotron">

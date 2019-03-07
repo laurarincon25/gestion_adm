@@ -80,7 +80,7 @@ class SolicitudProgramaController extends Controller
                 $solicitud_programas = SolicitudPrograma::orderBy('created_at','DESC')->where('user_id',$user_id)->get();
             }
         }
-        
+
         return view('programa.index')->with('solicitud_programas', $solicitud_programas);
     }
 
@@ -93,7 +93,7 @@ class SolicitudProgramaController extends Controller
     {
       $carreras  = Carrera::all();
       $pensum  = Pensum::all();
-      
+
       $carreras->each(function($carreras){
             $carreras->precio_programas;
         });
@@ -120,16 +120,16 @@ class SolicitudProgramaController extends Controller
         $solicitud_programa->email = $request->input('email');
 
         $precio_fact = DB::table('precio_programas')->select('precio')->where('carrera_id', $solicitud_programa->carrera_id)->where('pensum_id', $solicitud_programa->pensum_id)->first();
-        
+
         $solicitud_programa->precio_fact = $precio_fact->precio;
         $solicitud_programa->status = "P";
-        $solicitud_programa->pago_img = "";        
+        $solicitud_programa->pago_img = "";
 
         $solicitud_programa->save();
 
         Mail::to($solicitud_programa->email)->send(new EmailSolicitudPrograma($solicitud_programa));
 
-        return redirect()->route('programa.create')->with('status','Se ha enviado la solicitud');
+        return redirect()->route('programa.create')->with('status','Se ha enviado la solicitud. Diríjase a la opción de VER SOLICITUD DE PROGRAMAS para realizar el pago o cancelar el proceso de la solicitud ');
 
     }
 
@@ -165,13 +165,13 @@ class SolicitudProgramaController extends Controller
     public function update(Request $request, $id)
     {
         $solicitud_programa = SolicitudPrograma::findOrFail($id);
-        
+
         if($request['status'])
         {
             $solicitud_programa->status = $request['status'];
             $solicitud_programa->update();
-            
-            if($solicitud_programa->status=="E" || $solicitud_programa->status=="A")
+
+            if($solicitud_programa->status=="E" || $solicitud_programa->status=="A" || $solicitud_programa->status=="M")
             {
                 Mail::to($solicitud_programa->email)->send(new EmailSolicitudPrograma($solicitud_programa));
             }
