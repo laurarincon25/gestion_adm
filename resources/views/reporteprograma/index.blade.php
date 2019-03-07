@@ -4,8 +4,8 @@
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
 	<ol class="breadcrumb">
-		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">Solicitud de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
+		<li><a href="#"><em class="fa fa-pie-chart"></em></a></li>
+		<li class="active">Reporte de Programas <span class="badge">{{ count($solicitud_programas) }}</span></li>
 	</ol>
 
 	@include('layouts.filtrarfechas')

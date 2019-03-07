@@ -154,7 +154,7 @@ class SolicitudServiciosController extends Controller
 
         Mail::to($request->email)->send(new EmailSolicitudServicio($solicitud_servicio));
 
-        return redirect()->route('solicitudservicio.create')->with('status','Se ha enviado la solicitud');
+        return redirect()->route('solicitudservicio.create')->with('status','Se ha enviado la solicitud. Diríjase a la opción de VER SOLICITUD DE SERVICIOS para observar los detalles de la solictud o cancelar el proceso.');
     }
 
     /**

@@ -34,11 +34,8 @@ p{
 	@include('common.success')
 
 	<div class="page-header">
-<<<<<<< HEAD
-		<h3 style="text-align: center">Mi perfil <p><small>Añade información personal para compartir tu perfil</small></p></h3>
-=======
+
 		<h3 style="text-align: center">Mi perfil <p><small>Edite la información personal para mantener actualizado sus datos del perfil</small></p></h3>
->>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
 	</div>
 	@if($user)
 	<ul class="list-group">

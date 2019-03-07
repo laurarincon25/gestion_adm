@@ -2,11 +2,22 @@
 
 @section('content')
 
+<style>
+.panel-heading {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+</style>
+
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
   <ol class="breadcrumb">
-    <li><a href="#"><em class="fa fa-home"></em></a></li>
-    <li class="active">Solicitud-Servicio</li>
+    <li><a href="#"><em class="fa fa-info-circle"></em></a></li>
+    <li class="active">Realizar Solicitud Servicio</li>
   </ol>
 
   @if (session('status'))
@@ -16,7 +27,7 @@
   @endif
 
   <div class="panel panel-default" >
-    <div class="panel-heading">Solicitud de Servicios</div>
+    <div class="panel-heading" style="text-align: center">Solicitud de Servicios</div>
     <div class="panel-body">
       <form action ="{{ route('solicitudservicio.store') }}" method="POST" role="form">
         {{ csrf_field() }}

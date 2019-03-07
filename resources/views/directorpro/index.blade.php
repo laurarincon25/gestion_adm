@@ -2,6 +2,28 @@
 
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
+
+	<style>
+h1 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 45px;
+    text-align: justify;
+    text-align: center;
+    text-indent: 30px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+p{
+    text-align: justify;
+    font-size: 17px;
+    font-family: "Times New Roman", Times, serif;
+    text-indent: 20px;
+   
+}
+
+</style>
 	
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-home"></em></a></li>
@@ -16,13 +38,8 @@
 
 	<div class="panel panel-container" >
 		<div class="row" >
-			<div class="col-xs-6" style="margin: 0px 0px 0px 10px">
-				<p class="text-justify">Ofrecemos nuestros servicios de solicitud de documentos academicos, consultar los estados de la solicitudes realizadas, solicitar programas de las diferentes carreras, sugerencias y quejas; con diseños atractivos y altos estándares de calidad, para un alcance mayor de los procesos fundamentales de la Direcciòn Administrativa.</p>
-			</div>
-			<div class="col-xs-4">
-				<div class="img-content">
-					<img class="img img-responsive img-small" height="300px"  src="{{ asset('img/background-pacfin5.jpg') }}" alt="image">
-				</div>
+			<div class="col-lg-11" style="margin: 10px 0px 0px 10px">
+				<p class="text-justify" style="color:#000000;">Atender y dar respuesta a todas las solicitudes realizadas por los usuarios con la finalidad de prestar un servicio de primera o solventar un problema de manera eficiente.</p>
 			</div>
 		</div>
 	</div>
@@ -40,7 +57,7 @@
 			<div class="col-xs-12">
 				<div class="panel panel-blue panel-widget border-right">
 					<br>
-					<div class="row no-padding"><em class="fa fa-xl fa fa-file-text"></em>
+					<div class="row no-padding"><em class="fa fa-xl fa-folder-open-o"></em>
 						<br>
 						<br>
 						<div class="text-muted">Solicitudes de Programa</div>

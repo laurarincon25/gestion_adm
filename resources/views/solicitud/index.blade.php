@@ -3,7 +3,6 @@
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
-<<<<<<< HEAD
 <style>
 h2 {
     font-size: 30px;
@@ -15,8 +14,6 @@ h2 {
 
 </style>
 	
-=======
->>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
 	<ol class="breadcrumb">
 		<li><a href="#"><em class="fa fa-area-chart"></em></a></li>
 		<li class="active">Ver Solicitud de Documentos <span class="badge">{{ count($solicitudes) }}</span></li>

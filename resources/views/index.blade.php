@@ -276,16 +276,13 @@
 					<div class="col-md-5 contact-info text-left">
 						<h3>Información de contacto</h3>
 						<div class="info-detail">
-							<ul><li><i class="fa fa-calendar"></i><span>Lunes-Viernes:</span> 8:30 AM a 4:30 PM</li></ul>
+							<ul><li><i class="fa fa-calendar"></i><span>Lunes-Viernes:</span> 8:00 AM a 12:00 PM</li></ul>
 							<ul><li><i class="fa fa-map-marker"></i><span>Dirección:</span> Av. Las Industrias Nucleo Obelisco, Barquisimeto, Lara</li></ul>
 							<br>
-							<ul><li><i class="fa fa-phone"></i><span>Teléfono:</span> (0251) 987-1235</li></ul>
-							<ul><li><i class="fa fa-fax"></i><span>Fax:</span> (123) 984-1234</li></ul>
-							<ul><li><i class="fa fa-envelope"></i><span>Correo:</span> info@direccionadm.com</li></ul>
-							<ul><li><i class="fa fa-facebook"></i><span>Facebook:</span> x</li></ul>
-							<ul><li><i class="fa fa-twitter"></i><span>Twitter:</span> x</li></ul>
-							<ul><li><i class="fa fa-skype"></i><span>Skype:</span> x</li></ul>
-							<ul><li><i class="fa fa-instagram"></i><span>Instagram:</span> x</li></ul>
+							<ul><li><i class="fa fa-phone"></i><span>Teléfono:</span> (0251) 259-1556 / 259-1557</li></ul>
+							<ul><li><i class="fa fa-envelope"></i><span>Email:</span> dadcyt@ucla.edu.ve.com</li></ul>
+							<ul><li><i class="fa fa-twitter"></i><span>Twitter:</span> @dadcyt</li></ul>
+							<ul><li><i class="fa fa-instagram"></i><span>Instagram:</span> @dadcyt</li></ul>
 						</div>
 					</div>
 				</div>
@@ -302,9 +299,7 @@
 					<p>&copy;Copyright 2019 Empresa de Desarrollo │Todos los Derechos Reservados.</p>
 				</div>
 				<div class="col-xs-6 text-right">
-					<a href=""><i class="fa fa-facebook"></i></a>
 					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-skype"></i></a>
 					<a href=""><i class="fa fa-instagram"></i></a>
 				</div>
 			</div>

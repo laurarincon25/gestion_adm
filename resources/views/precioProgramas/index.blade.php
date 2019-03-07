@@ -3,9 +3,23 @@
 @section('content')
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 	
+<style>
+h1 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 45px;
+    text-align: justify;
+    text-align: center;
+    text-indent: 30px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+</style>
+
 	<ol class="breadcrumb">
-		<li><a href="#"><em class="fa fa-home"></em></a></li>
-		<li class="active">Precio-Programas</li>
+		<li><a href="#"><em class="fa fa-dollar"></em></a></li>
+		<li class="active">Precio por Programas</li>
 	</ol>
 
 	<div class="row">
@@ -32,7 +46,7 @@
 				<td>{{ $precio_programa->pensum->nombre }}</td>
 				<td>{{ $precio_programa->precio }}</td>
 				<td>
-					<a class="btn btn-primary" href="{{ route('precioDocumentos.edit',$precio_programa->id) }}">Editar</a>
+					<a class="btn btn-primary" href="{{ route('precioProgramas.edit',$precio_programa->id) }}">Editar</a>
 				</td>
 			</tr>
 			@endforeach

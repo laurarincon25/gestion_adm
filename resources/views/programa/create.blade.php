@@ -4,8 +4,6 @@
 
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
-<<<<<<< HEAD
-
   <style>
 .panel-heading {
     font-size: 30px;
@@ -17,11 +15,9 @@
 
 </style>
   
-=======
->>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
   <ol class="breadcrumb">
     <li><a href="#"><em class="fa fa-folder-open"></em></a></li>
-    <li class="active">Solicitar programa</li>
+    <li class="active">Solicitar Programas</li>
   </ol>
 
   @if (session('status'))
@@ -31,11 +27,9 @@
   @endif
 
   <div class="panel panel-default" >
-<<<<<<< HEAD
+
     <div class="panel-heading" style="text-align: center">Solicitud de Programas Académicos</div>
-=======
-    <div class="panel-heading">Solicitud de Programas Académicos</div>
->>>>>>> 7013dd6075f3315ebb85a4576077c9eab25d3d1c
+
     <div class="panel-body">
       <form action ="{{ route('programa.store') }}" method="POST" role="form">
         {{ csrf_field() }}

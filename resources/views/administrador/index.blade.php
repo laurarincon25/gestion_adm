@@ -4,7 +4,7 @@
 <div class="col-sm-offset-5 col-sm-7 col-md-offset-4 col-md-8 col-lg-offset-3 col-lg-9 main main_solicitud_create">
 
 	<ol class="breadcrumb">
-		<li><a href="#"><em class="fa fa-home"></em></a></li>
+		<li><a href="#"><em class="fa fa-users"></em></a></li>
 		<li class="active">Lista de Usuarios <span class="badge">{{ count($users) }}</span></li>
 	</ol>
 
