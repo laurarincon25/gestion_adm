@@ -129,7 +129,7 @@ class SolicitudProgramaController extends Controller
 
         Mail::to($solicitud_programa->email)->send(new EmailSolicitudPrograma($solicitud_programa));
 
-        return redirect()->route('programa.create')->with('status','Se ha enviado la solicitud. Diríjase a la opción de VER SOLICITUD DE PROGRAMAS para realizar el pago o cancelar el proceso de la solicitud ');
+        return redirect()->route('programa.create')->with('status','Se ha enviado la solicitud. Verifique su correo la información de la solictud realizada. Diríjase a la opción de VER SOLICITUD DE PROGRAMAS para realizar el pago subiendo el comprobante o cancelar el proceso de la solicitud');
 
     }
 

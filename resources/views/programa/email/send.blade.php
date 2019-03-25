@@ -13,7 +13,7 @@
 	@if($solicitud_programa->status=="P")
 
 	<h1 class="text-center">Solicitud de Programa UCLA</h1>
-	<h2 class="text-center">Usted ha hecho una solicitud de Programa:</h2>
+	<h2 class="text-center">Usted ha hecho una solicitud de Programa: Para realizar el pago puede hacer el deposito o transferencia (solo al mismo banco) Banco Provincial en la cuenta corriente 0108-0906-11-0100009808 UCLA RIF-G-20000077-5</h2>
 	<p><strong>Código de la Solicitud:</strong> {{ $solicitud_programa->uuid }}</p>
 	<p><strong>Nombre del Solicitante:</strong> {{ $solicitud_programa->user->name }}</p>
 	<p><strong>Cédula del Solicitante:</strong> {{ $solicitud_programa->user->cedula }}</p>

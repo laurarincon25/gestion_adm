@@ -143,7 +143,7 @@ class SolicitudController extends Controller
         }
 
         Mail::to($request->email)->send(new EmailSolicitud($last_solicitud));
-        return redirect()->route('solicitud.create')->with('status','Se ha enviado la solicitud. Diríjase a la opción de VER SOLICITUD DE DOCUMENTOS para realizar el pago o cancelar el proceso de la solicitud ');
+        return redirect()->route('solicitud.create')->with('status','Se ha enviado la solicitud. Verifique su correo la información de la solictud realizada. Diríjase a la opción de VER SOLICITUD DE DOCUMENTOS para realizar el pago subiendo el comprobante o cancelar el proceso de la solicitud, ');
 
     }
 
